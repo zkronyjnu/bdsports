@@ -1,0 +1,33 @@
+
+table
+{
+    
+    margin-bottom: 20px;
+    
+    padding: 15px;
+}
+
+tr{
+    width: 100%;
+    border-collapse:collapse;
+}
+td
+{
+text-align:right;
+}
+td
+{
+height:100%;
+vertical-align:auto;
+}
+/*--------color------------/*/
+table, td, th
+{
+    border:1px solid green;
+    border-radius: 4px;
+}
+th
+{
+background-color:green;
+color:white;
+}

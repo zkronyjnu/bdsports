@@ -1,0 +1,16 @@
+<form action="insertgoal.php" method="POST">
+    <center>
+        <h1 style="padding: 20px; color: #8AC007">Insert New Goal</h1>
+        <table><tr>
+                <td>Enter Player ID:</td>
+                <td><select name="playerid"><option>-PlayerID-</option><?php
+                        while ($row = mysql_fetch_array($result)) {
+                        echo '<option value="' . $row['player_id'] . '">' . $row['player_id'] . '</option>';
+                        }
+                        ?></select></td></tr></table>
+        <table><tr>
+                <td><input type="submit" name="newgoal" value="Submit"></td>
+            </tr></table>
+    </center>
+
+</form>
